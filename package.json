@@ -1,0 +1,58 @@
+{
+  "name": "data-vending-machine-skeleton",
+  "version": "0.1.0",
+  "description": "nostr data vending machine skeleton",
+  "type": "module",
+  "engines": {
+    "node": "~19"
+  },
+  "keywords": [
+    "nostr",
+    "ai",
+    "bitcoin"
+  ],
+  "devDependencies": {
+    "@types/jest": "~29.5",
+    "@types/node": "~18",
+    "@typescript-eslint/eslint-plugin": "~5.59",
+    "@typescript-eslint/parser": "~5.59",
+    "eslint": "~8.38",
+    "eslint-config-prettier": "~8.8",
+    "eslint-plugin-jest": "~27.2",
+    "jest": "~29.5",
+    "prettier": "~2.8",
+    "rimraf": "~5.0",
+    "ts-api-utils": "~0.0.44",
+    "ts-jest": "~29.1",
+    "typescript": "~5.0"
+  },
+  "scripts": {
+    "start": "node build/src/main.js",
+    "clean": "rimraf coverage build tmp",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts --ext .mts",
+    "test": "jest --coverage",
+    "prettier": "prettier --config .prettierrc --write .",
+    "test:watch": "jest --watch"
+  },
+  "author": "pablof7z",
+  "license": "MIT",
+  "dependencies": {
+    "@nostr-dev-kit/ndk": "^0.7.5",
+    "axios": "^1.4.0",
+    "debug": "^4.3.4",
+    "file-type": "^18.5.0",
+    "form-data": "^4.0.0",
+    "form-data-encoder": "^3.0.0",
+    "formdata-node": "^5.0.1",
+    "light-bolt11-decoder": "^3.0.0",
+    "lnbits": "^1.1.5",
+    "tslib": "~2.5"
+  },
+  "volta": {
+    "node": "18.12.1"
+  }
+}
