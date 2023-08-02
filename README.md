@@ -1,6 +1,6 @@
 # Data Vending Machine - Service Provider
 
-This is an implementation of a very simple [Data Vending Machine](https://github.com/nostr-protocol/nips/blob/vending-machine/vending-machine.md) Service Provider.
+This is an implementation of a very simple [Data Vending Machine]([https://github.com/nostr-protocol/nips/blob/vending-machine/vending-machine.md](https://github.com/nostr-protocol/nips/blob/vending-machine/90.md)) Service Provider.
 
 It can be used with the dev version of Highlighter on https://dev.highlighter.com/web
 
